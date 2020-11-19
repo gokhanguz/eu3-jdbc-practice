@@ -73,6 +73,10 @@ public class simpleGetRequest {
 
         //verify body contains Americas
         Assert.assertTrue(response.body().asString().contains("Americas"));
+
+
+//        given().accept(ContentType.JSON).when().get(hrurl+"/2").then().assertThat().statusCode(200)
+//                .and().contentType("application/json").assertThat().toString().contains("Americas");
     }
 
 
