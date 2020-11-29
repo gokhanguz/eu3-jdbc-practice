@@ -85,6 +85,7 @@ public class jdbc_example {
         System.out.println("dbMetadata.getDriverName() = " + dbMetadata.getDriverName());
         System.out.println("dbMetadata.getDriverVersion() = " + dbMetadata.getDriverVersion());
 
+
         //get the result set object metadata
 
         ResultSetMetaData rsMetadata=resultSet.getMetaData();
