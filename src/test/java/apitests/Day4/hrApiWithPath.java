@@ -23,6 +23,7 @@ public class hrApiWithPath {
         Response response = given().accept(ContentType.JSON)
                 .and().queryParam("q", "{\"region_id\":2}")
                 .when().get("/countries");
+        response.prettyPrint();
 
         assertEquals(response.statusCode(),200);
 
